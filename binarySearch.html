@@ -7,8 +7,29 @@
     <title>Document</title>
 </head>
 <script>
-    let arr=[23,46,75,78,99,123];
-    console.log(arr.includes(23));
+    let array=[23,46,75,78,99,123];
+    let value=21;
+    let n=array.length;
+    let l=0;
+    let r=n-1;
+    let binary=function(arr){
+    while(l<r){
+    let m=(l+r)/2;
+    if(value===arr[m]){
+        return m;
+    }
+    else if(value>arr[m]){
+        l=m+1;
+    }
+    else{
+        r=m-1;
+    }
+    return -1;
+    }
+}
+console.log(binary(array));
+
+
 </script>
 <body>
     
