@@ -8,14 +8,14 @@
 </head>
 <script>
     let array=[23,46,75,78,99,123];
-    let value=21;
-    let n=array.length;
+    let value=23;
+    function binary(arr){
+    let n=arr.length;
     let l=0;
     let r=n-1;
-    let binary=function(arr){
     while(l<r){
-    let m=(l+r)/2;
-    if(value===arr[m]){
+    let m=Math.floor((l+r)/2);
+    if(value==arr[m]){
         return m;
     }
     else if(value>arr[m]){
@@ -24,8 +24,8 @@
     else{
         r=m-1;
     }
-    return -1;
     }
+    return -1;
 }
 console.log(binary(array));
 
