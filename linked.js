@@ -20,8 +20,8 @@ function reverse(node){
         prev=current;
         current=next;
     }
-    node=prev;
-    return node;
+   
+    return prev;
 }
 var head =new Node(54);
 head.next=new Node(48);
