@@ -10,17 +10,17 @@ function printList(node){
         node=node.next;
     }
 }
-function reverse(head){
+function reverse(node){
     var prev=null;
-    var current=head;
+    var current=node;
     var next=null;
     while(current!=null){
-       next=current.next;
-       current.next=prev;
-       prev=current;
-       current=next;  
+        next=current.next;
+        current.next=prev;
+        prev=current;
+        current=next;
     }
-    head=prev;
+    node=prev;
     return node;
 }
 var head =new Node(54);
