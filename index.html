@@ -7,15 +7,17 @@
     <title>Array Traversing</title>
     <script>
         let data=[9,45,2,8,45,36];
-        data.foreach(function(element){
-            return console.log(element);
-        })
+      function getElement(){
+        let el=document.getElementById('element').value;
+        alert(data[el]);
+      }
 
 
 
     </script>
 </head>
 <body>
-    
+    <input type="text" id="element"/>
+    <button onclick="getElement()">Get Element from Array</button>
 </body>
 </html>
